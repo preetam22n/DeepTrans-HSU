@@ -69,7 +69,7 @@ class NonZeroClipper(object):
 
 
 class Train_test:
-    def __init__(self, dataset, device, skip_train=False, save=False, **kwargs):
+    def __init__(self, dataset, device, skip_train=False, save=False):
         super(Train_test, self).__init__()
         self.skip_train = skip_train
         self.device = device

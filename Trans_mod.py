@@ -1,8 +1,6 @@
 import os
 import time
 import random
-from cachetools import LRUCache
-from sklearn.linear_model import PassiveAggressiveRegressor
 
 import torch
 import utils

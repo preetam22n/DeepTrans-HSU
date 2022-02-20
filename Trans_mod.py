@@ -1,17 +1,16 @@
 import os
-import time
-import random
-
-import torch
-import utils
-import plots
-import datasets
 import pickle
-import torch.nn as nn
-import transformer
+import time
+
 import scipy.io as sio
-import numpy as np
+import torch
+import torch.nn as nn
 from torchsummary import summary
+
+import datasets
+import plots
+import transformer
+import utils
 
 
 class AutoEncoder(nn.Module):
@@ -80,30 +79,30 @@ class Train_test:
         os.makedirs(self.save_dir, exist_ok=True)
         if dataset == 'samson':
             self.P, self.L, self.col = 3, 156, 95
-            self.LR, self.EPOCH = kwargs["lr"], 200 #6e-3, 200
+            self.LR, self.EPOCH = 6e-3, 200
             self.patch, self.dim = 5, 200
             self.beta, self.gamma = 5e3, 3e-2
-            self.weight_decay_param = kwargs["wd"] #4e-5
+            self.weight_decay_param = 4e-5
             self.order_abd, self.order_endmem = (0, 1, 2), (0, 1, 2)
             self.data = datasets.Data(dataset, device)
             self.loader = self.data.get_loader(batch_size=self.col ** 2)
             self.init_weight = self.data.get("init_weight").unsqueeze(2).unsqueeze(3).float()
         elif dataset == 'apex':
             self.P, self.L, self.col = 4, 285, 110
-            self.LR, self.EPOCH = kwargs["lr"], 200 #9e-3, 200
+            self.LR, self.EPOCH = 9e-3, 200
             self.patch, self.dim = 5, 200
             self.beta, self.gamma = 5e3, 5e-2
-            self.weight_decay_param = kwargs["wd"] #4e-5
+            self.weight_decay_param = 4e-5
             self.order_abd, self.order_endmem = (3, 1, 2, 0), (3, 1, 2, 0)
             self.data = datasets.Data(dataset, device)
             self.loader = self.data.get_loader(batch_size=self.col ** 2)
             self.init_weight = self.data.get("init_weight").unsqueeze(2).unsqueeze(3).float()
         elif dataset == 'dc':
             self.P, self.L, self.col = 6, 191, 290
-            self.LR, self.EPOCH = kwargs["lr"], 150 #6e-3, 150
+            self.LR, self.EPOCH = 6e-3, 150
             self.patch, self.dim = 10, 400
             self.beta, self.gamma = 5e3, 1e-4
-            self.weight_decay_param = kwargs["wd"] #3e-5
+            self.weight_decay_param = 3e-5
             self.order_abd, self.order_endmem = (0, 2, 1, 5, 4, 3), (0, 2, 1, 5, 4, 3)
             self.data = datasets.Data(dataset, device)
             self.loader = self.data.get_loader(batch_size=self.col ** 2)

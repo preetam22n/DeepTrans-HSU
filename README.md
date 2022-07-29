@@ -1,3 +1,3 @@
-# Deep Hyperspectral Unmixing using Transformer Network (coming soon)
+# Deep Hyperspectral Unmixing using Transformer Network
 
 The PyTorch Code for "Deep Hyperspectral Unmixing using Transformer Network".

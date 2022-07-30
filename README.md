@@ -2,7 +2,7 @@
 
 The PyTorch Code for "Deep Hyperspectral Unmixing using Transformer Network".
 
-If you use code in your research, we would appreciate a citation to both the original paper:
+If you use the code in your research, we would appreciate a citation to the original paper:
 
 	@article{roy2019hybridsn,
         	title={Hyperspectral Unmixing using Transformer Network},

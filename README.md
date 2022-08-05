@@ -1,11 +1,11 @@
 # Hyperspectral Unmixing using Transformer Network
 
-The PyTorch Code for "Hyperspectral Unmixing using Transformer Network".
+[Preetam Ghosh](https://scholar.google.com/citations?user=2HrZI6sAAAAJ&hl=en), [Swalpa Kumar Roy](https://swalpa.github.io), [Bikram Koirala](https://visielab.uantwerpen.be/people/bikram-koirala), [Behnood Rasti](https://scholar.google.com/citations?user=hA_Xi6MAAAAJ&hl=en), and [Paul Scheunders](https://visielab.uantwerpen.be/people/paul-scheunders) 
 
-<strong>:fire:New:bangbang:</strong></font></sup> Code will be available here soon.
+The repository contains the PyTorch implementations for [Hyperspectral Unmixing using Transformer Network](https://ieeexplore.ieee.org/document/9848995).
+
+<strong>:fire:New:bangbang:</strong></font></sup> Code is now available here.
 ___________
-
-The repository contains the implementations for [Hyperspectral Unmixing using Transformer Network](https://ieeexplore.ieee.org/document/9848995).
 
 <img src="./model.png" width="700" height="450"/>
 

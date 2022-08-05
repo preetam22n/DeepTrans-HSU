@@ -1,6 +1,17 @@
 # Hyperspectral Unmixing using Transformer Network
 
-The PyTorch Code for "Deep Hyperspectral Unmixing using Transformer Network".
+The PyTorch Code for "Hyperspectral Unmixing using Transformer Network".
+
+<strong>:fire:New:bangbang:</strong></font></sup> Code will be available here soon.
+___________
+
+The repository contains the implementations for [Hyperspectral Unmixing using Transformer Network](https://ieeexplore.ieee.org/document/9848995).
+
+<img src="./model.png" width="700" height="450"/>
+
+---------------------
+### Dataset
+
 
 If you use the code in your research, we would appreciate a citation to the original paper:
 

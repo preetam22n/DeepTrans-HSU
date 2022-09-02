@@ -21,8 +21,8 @@ If you use the code in your research, we would appreciate a citation to the orig
         	title={Hyperspectral Unmixing using Transformer Network},
 		author={Ghosh, Preetam and Roy, Swalpa Kumar and Koirala, Bikram and Rasti, Behnood and Scheunders, Paul},
 		journal={IEEE Transaction on Geoscience and Remote Sensing},
-		volume={},
-		no.={},
-		pp.={01-17},
+		volume={60},
+		no.={1},
+		pp.={01-16},
 		year={2022}
 		}
